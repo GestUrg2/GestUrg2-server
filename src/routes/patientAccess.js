@@ -420,7 +420,7 @@ const hospitalisation =
            // ==================================================
 // LIEN PATIENT
 // ==================================================
-const PATIENT_URL = "https://junior2704.github.io/GestUrg2/portail-patient/patient-login.html";
+const PATIENT_URL = "https://GestUrg2.github.io/app/portail-patient/patient-login.html";
 const lienPatient =
     `${PATIENT_URL}?token=${encodeURIComponent(token)}`;
 
