@@ -16,15 +16,7 @@ router.get(
     // verifierMedecin, // décommente si nécessaire
     async (req, res) => {
         try {
-            const nom = String(req.query.name || "").trim();
-
-            if (nom.length < 2) {
-                return res.status(400).json({
-                    success: false,
-                    error: "Saisissez au moins 2 caractères."
-                });
-            }
-
+            
             const apiKey = process.env.ESANTE_API_KEY;
 
             if (!apiKey) {
@@ -36,8 +28,20 @@ router.get(
                 });
             }
 
-            const url = new URL(ESANTE_API_URL);
-            url.searchParams.set("name", nom);
+            const family = String(req.query.family || "").trim();
+const given = String(req.query.given || "").trim();
+
+if (family.length < 2 || given.length < 2) {
+  return res.status(400).json({
+    success: false,
+    error: "Veuillez saisir un nom et un prénom."
+  });
+}
+
+const url = new URL(ESANTE_API_URL);
+
+url.searchParams.set("family", family);
+url.searchParams.set("given", given);
 
             const response = await fetch(url, {
                 method: "GET",
