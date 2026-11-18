@@ -70,7 +70,7 @@ function construireHTML({ prenom, nom, date, heure, reference }) {
 <tr>
 <td align="center" style="background-color:#0B544E;padding:32px 25px 30px;">
 
-    <img src="https://junior2704.github.io/GestUrg2/logo.png" alt="GestUrg2" width="76"
+    <img src="https://gesturg2.github.io/app/logo.png" alt="GestUrg2" width="76"
         style="display:block;width:76px;height:76px;object-fit:contain;margin:0 auto 16px;background-color:#FFFFFF;border-radius:20px;padding:7px;">
 
     <div style="display:inline-block;background-color:#DCF3F0;color:#0B544E;border-radius:999px;padding:6px 13px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;">
@@ -146,7 +146,7 @@ function construireHTML({ prenom, nom, date, heure, reference }) {
     <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin:26px auto 0;">
     <tr>
     <td align="center" style="border:2px solid #EF6351;border-radius:14px;background-color:#FFFFFF;">
-        <a href="https://junior2704.github.io/GestUrg2/annulerrdv.html"
+        <a href="https://gesturg2.github.io/app/annulerrdv.html"
            target="_blank"
            style="display:inline-block;padding:13px 26px;color:#EF6351;font-size:15px;font-weight:700;text-decoration:none;border-radius:14px;">
             Annuler mon rendez-vous

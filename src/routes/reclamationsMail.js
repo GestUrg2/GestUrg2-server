@@ -13,7 +13,7 @@ import { envoyerEmail } from "../services/mailService.js";
 const router = express.Router();
 const COLLECTION = "reclamations";
 const SESSIONS = "sessionsReclamations";
-const SUIVI_URL = process.env.SUIVI_URL || "https://GestUrg2.github.io/app/suivi-demande.html";
+const SUIVI_URL = process.env.SUIVI_URL || "https://gesturg2.github.io/app/suivi-demande.html";
 const PRIORITES = new Set(["normale", "haute", "urgente"]);
 const LIENS = new Set(["patient", "proche", "autre"]);
 const CATEGORIES = new Set([

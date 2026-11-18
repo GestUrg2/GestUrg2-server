@@ -614,7 +614,7 @@ router.post(
 
       // 6. Construire le lien du portail patient
       const portalUrl =
-        "https://junior2704.github.io/GestUrg2/portail-patient/patient-login.html";
+        "https://gesturg2.github.io/app/portail-patient/patient-login.html";
 
       const lien =
         `${portalUrl}?token=${encodeURIComponent(token)}`;

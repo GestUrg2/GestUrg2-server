@@ -32,7 +32,7 @@ app.use(helmet());
 
 app.use(cors({
     origin: [
-        "https://GestUrg2.github.io/app"
+        "https://gesturg2.github.io/app"
     ],
 
     credentials: true,
