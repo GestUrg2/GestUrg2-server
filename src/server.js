@@ -13,6 +13,7 @@ import patientAccessRouter from "./routes/patientAccess.js";
 import rdvConfirmationRouter from "./routes/rdvConfirmation.js";
 import reclamationsRouter from "./routes/reclamations.js";
 import calendarFeed from "./routes/calendarFeed.js";
+import esanteRouter from "./routes/esante.js";
 const app = express();
 
 app.set("trust proxy", 1);
@@ -178,6 +179,10 @@ app.use(
 app.use(
     "/api/reclamations",
     reclamationsRouter
+);
+app.use(
+    "/api/esante",
+    esanteRouter
 );
 app.use("/api/calendarFeed", calendarFeed);
 // ======================================================
